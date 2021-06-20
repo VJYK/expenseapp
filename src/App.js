@@ -1,7 +1,7 @@
 import Expenses from "./components/Expenses";
 import "./App.css";
 import React from "react";
-function App() {
+const App = ()=> {
 const expenses = [
   {expenseDate: new Date(2021,3,10),expenseTitle:'Car Insurance', expensePrice:200},
   {expenseDate: new Date(2021,2,12),expenseTitle:'Toilet Papper', expensePrice:300},
