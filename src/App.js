@@ -1,6 +1,7 @@
-import Expenses from "./components/Expenses";
+import Expenses from "./components/Expenses/Expenses";
 import "./App.css";
 import React from "react";
+import NewExpense from "./components/NewExpenses/NewExpense";
 const App = ()=> {
 const expenses = [
   {expenseDate: new Date(2021,3,10),expenseTitle:'Car Insurance', expensePrice:200},
@@ -17,6 +18,7 @@ const expenses = [
 //)
  return (
   <div className='expenses'>
+    <NewExpense/>
     <Expenses items={expenses}/>
   </div> 
  )
